@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
+        <module name="service-apollo" />
+        <module name="service-communicate" />
         <module name="service-es" />
         <module name="service-fegin" />
         <module name="service-hi" />
@@ -20,6 +22,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-server" options="-parameters" />
+      <module name="service-apollo" options="-parameters" />
+      <module name="service-communicate" options="-parameters" />
       <module name="service-es" options="-parameters" />
       <module name="service-fegin" options="-parameters" />
       <module name="service-hi" options="-parameters" />

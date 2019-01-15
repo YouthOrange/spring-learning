@@ -14,6 +14,7 @@ import java.util.List;
  */
 @Repository
 public interface GoodsRepository extends JpaRepository<Goods, Long>, JpaSpecificationExecutor<Goods> {
+
     List<Goods> findByTypeOrOrderById(String type);
 
     List<Goods> findByNameContainsOrTypeOrderById(String key, String type);

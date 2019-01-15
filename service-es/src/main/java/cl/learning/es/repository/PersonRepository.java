@@ -21,6 +21,4 @@ public interface PersonRepository extends ElasticsearchRepository<Person, Long> 
     List<Person> findByAgeAfterOrderById(Integer minAge);
 
 
-
-
 }

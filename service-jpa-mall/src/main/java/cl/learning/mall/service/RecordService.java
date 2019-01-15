@@ -23,7 +23,6 @@ public class RecordService {
     private RecordRepository recordRepository;
 
 
-
     public Long saveRecord(Record record) {
         return recordRepository.save(record).getId();
     }

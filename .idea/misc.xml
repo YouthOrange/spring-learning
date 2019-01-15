@@ -94,6 +94,8 @@
         <option value="$PROJECT_DIR$/service-es/pom.xml" />
         <option value="$PROJECT_DIR$/service-jpa-mall/pom.xml" />
         <option value="$PROJECT_DIR$/spring-base-api/pom.xml" />
+        <option value="$PROJECT_DIR$/service-apollo/pom.xml" />
+        <option value="$PROJECT_DIR$/service-communicate/pom.xml" />
       </list>
     </option>
   </component>

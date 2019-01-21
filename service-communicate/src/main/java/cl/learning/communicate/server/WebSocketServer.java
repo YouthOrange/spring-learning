@@ -48,10 +48,7 @@ public class WebSocketServer {
             } catch (Exception e) {
                 log.warn("sendMessage error,cause by:{}", Throwables.getStackTraceAsString(e));
             }
-
         });
-
-
     }
 
     @OnError

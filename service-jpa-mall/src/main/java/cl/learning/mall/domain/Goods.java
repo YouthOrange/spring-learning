@@ -20,6 +20,7 @@ public class Goods {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private String brand;
     private Double price;
     private Integer count;
     private String origin;

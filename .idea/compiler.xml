@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
+        <module name="nacos-server" />
         <module name="service-apollo" />
         <module name="service-communicate" />
         <module name="service-es" />
@@ -15,6 +16,7 @@
         <module name="service-jpa-mall" />
         <module name="service-ribbon" />
         <module name="spring-base-api" />
+        <module name="spring-cloud" />
         <module name="spring-cloud-learning" />
       </profile>
     </annotationProcessing>
@@ -22,6 +24,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-server" options="-parameters" />
+      <module name="nacos-server" options="-parameters" />
       <module name="service-apollo" options="-parameters" />
       <module name="service-communicate" options="-parameters" />
       <module name="service-es" options="-parameters" />
@@ -30,6 +33,7 @@
       <module name="service-jpa-mall" options="-parameters" />
       <module name="service-ribbon" options="-parameters" />
       <module name="spring-base-api" options="-parameters" />
+      <module name="spring-cloud" options="-parameters" />
       <module name="spring-cloud-learning" options="-parameters" />
     </option>
   </component>

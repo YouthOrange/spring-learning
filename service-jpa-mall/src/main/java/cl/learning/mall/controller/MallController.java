@@ -1,9 +1,10 @@
 package cl.learning.mall.controller;
 
-import cl.learning.base.dto.Page;
+import cl.learning.base.dto.Paging;
 import cl.learning.base.dto.Response;
 import cl.learning.mall.domain.Goods;
 import cl.learning.mall.domain.Record;
+import cl.learning.mall.dto.GoodsDto;
 import cl.learning.mall.dto.GoodsQueryDto;
 import cl.learning.mall.dto.VipDto;
 import cl.learning.mall.service.GoodsService;
@@ -31,7 +32,7 @@ public class MallController {
     private GoodsService goodsService;
 
     @GetMapping(value = "/vip/get")
-    public VipDto findByVipId(Long vipId) {
+    public Response<VipDto> findByVipId(Long vipId) {
         return vipService.findByVipId(vipId);
     }
 
@@ -47,9 +48,12 @@ public class MallController {
     }
 
     @GetMapping(value = "/goods/find")
-    Response<Page<Goods>> findAll(@RequestParam(required = false) GoodsQueryDto queryDto) {
+    public Response<Paging<GoodsDto>> findAll(@RequestParam(required = false) GoodsQueryDto queryDto) {
         return goodsService.findAll(queryDto);
     }
 
-
+    @PostMapping(value = "/goods/save")
+    public Response<Goods> saveGoods(@RequestBody Goods goods) {
+        return goodsService.saveGoods(goods);
+    }
 }

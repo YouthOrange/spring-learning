@@ -1,5 +1,6 @@
 package cl.learning.mall.service;
 
+import cl.learning.base.dto.Response;
 import cl.learning.mall.domain.Vip;
 import cl.learning.mall.dto.RecordDto;
 import cl.learning.mall.dto.VipDto;
@@ -39,14 +40,14 @@ public class VipService {
         return vip.getVipId();
     }
 
-    public VipDto findByVipId(Long vipId) {
+    public Response<VipDto> findByVipId(Long vipId) {
         Vip vip = vipRepository.findByVipId(vipId);
         List<RecordDto> recordList = recordService.getRecordByVipId(vipId);
         log.info("recordList:{}", JSON.toJSONString(recordList));
         VipDto vipDto = new VipDto();
         BeanUtils.copyProperties(vip, vipDto);
         vipDto.setRecordList(recordList);
-        return vipDto;
+        return Response.ok(vipDto);
     }
 
     public Long idBuilder() {

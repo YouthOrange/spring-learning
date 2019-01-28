@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="857f18d6-8bcb-4a06-a8e1-31f7391d0b4e" name="Default Changelist" comment="web-socket">
-      <change afterPath="$PROJECT_DIR$/.idea/mongoSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/dto/GoodsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/enums/GoodsTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/util/MallSchedule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-jpa-mall/src/main/resources/static/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-jpa-mall/src/test/java/cl/learning/mall/service/GoodsServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/262d2a0f-f7f4-45d6-ad68-2779fdf8ff09.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/262d2a0f-f7f4-45d6-ad68-2779fdf8ff09.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-communicate/src/main/java/cl/learning/communicate/server/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-communicate/src/main/java/cl/learning/communicate/server/WebSocketServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-jpa-mall/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-jpa-mall/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/controller/MallController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/controller/MallController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/domain/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/domain/Goods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/dto/GoodsQueryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/dto/GoodsQueryDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/repository/GoodsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/repository/GoodsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/service/VipService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/service/VipService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/util/MallUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-jpa-mall/src/main/java/cl/learning/mall/util/MallUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-jpa-mall/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service-jpa-mall/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-base-api/src/main/java/cl/learning/base/dto/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-base-api/src/main/java/cl/learning/base/dto/Paging.java" afterDir="false" />
-    </list>
+    <list default="true" id="857f18d6-8bcb-4a06-a8e1-31f7391d0b4e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/service-hi/target/" />
@@ -239,7 +216,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
@@ -565,7 +552,7 @@
       <workItem from="1547690790877" duration="9320000" />
       <workItem from="1548040164272" duration="636000" />
       <workItem from="1548056313813" duration="358000" />
-      <workItem from="1548062109896" duration="43000" />
+      <workItem from="1548062109896" duration="164000" />
     </task>
     <task id="LOCAL-00001" summary="web-socket">
       <created>1547537662990</created>
@@ -574,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547537662990</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".....">
+      <created>1548062243488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1548062243488</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -610,7 +604,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62232000" />
+    <option name="totallyTimeSpent" value="62353000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -632,7 +626,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.22891566" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22891566" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -665,7 +659,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除多余配置" />
     <MESSAGE value="web-socket" />
-    <option name="LAST_COMMIT_MESSAGE" value="web-socket" />
+    <MESSAGE value="....." />
+    <option name="LAST_COMMIT_MESSAGE" value="....." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

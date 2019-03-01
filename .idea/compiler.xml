@@ -10,6 +10,7 @@
         <module name="nacos-server" />
         <module name="service-apollo" />
         <module name="service-communicate" />
+        <module name="service-crawler" />
         <module name="service-es" />
         <module name="service-fegin" />
         <module name="service-hi" />
@@ -27,6 +28,7 @@
       <module name="nacos-server" options="-parameters" />
       <module name="service-apollo" options="-parameters" />
       <module name="service-communicate" options="-parameters" />
+      <module name="service-crawler" options="-parameters" />
       <module name="service-es" options="-parameters" />
       <module name="service-fegin" options="-parameters" />
       <module name="service-hi" options="-parameters" />

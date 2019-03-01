@@ -1,0 +1,31 @@
+{
+  "index": {
+    "analysis": {
+      "analyzer": {
+        "ik_pinyin_analyzer": {
+          "type": "custom",
+          "tokenizer": "ik_smart",
+          "filter": "pinyin_filter"
+        }
+      },
+      "filter": {
+        "pinyin_filter": {
+          "type": "pinyin",
+          //true：支持首字母
+          "keep_first_letter":true,
+          /*false：不支持首字母分隔*/
+          "keep_separate_first_letter": false,
+          //true：支持全拼
+          "keep_full_pinyin": true,
+          "keep_original": false,
+          //设置最大长度
+          "limit_first_letter_length": 10,
+          //小写非中文字母
+          "lowercase": true,
+          //重复的项将被删除
+          "remove_duplicated_term": true
+        }
+      }
+    }
+  }
+}

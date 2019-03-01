@@ -50,5 +50,4 @@ public class PersonService {
         return personRepository.findByAgeAfterOrderById(minAge);
     }
 
-
 }

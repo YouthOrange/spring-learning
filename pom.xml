@@ -17,6 +17,9 @@
         <module>spring-base-api</module>
         <module>service-jpa-mall</module>
         <module>service-apollo</module>
+        <module>service-communicate</module>
+        <module>nacos-server</module>
+        <module>service-crawler</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -30,6 +33,7 @@
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
         <fastjson.version>1.2.54</fastjson.version>
         <apollo.version>1.1.0</apollo.version>
+        <redis.version>1.4.2.RELEASE</redis.version>
     </properties>
     <dependencies>
         <dependency>
@@ -59,6 +63,12 @@
             <artifactId>apollo-client</artifactId>
             <version>${apollo.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-redis</artifactId>
+            <version>${redis.version}</version>
+        </dependency>
+
 
     </dependencies>
     <dependencyManagement>

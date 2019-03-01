@@ -97,6 +97,7 @@
         <option value="$PROJECT_DIR$/service-apollo/pom.xml" />
         <option value="$PROJECT_DIR$/service-communicate/pom.xml" />
         <option value="$PROJECT_DIR$/nacos-server/pom.xml" />
+        <option value="$PROJECT_DIR$/service-crawler/pom.xml" />
       </list>
     </option>
   </component>

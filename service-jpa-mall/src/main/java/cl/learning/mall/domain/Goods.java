@@ -1,6 +1,7 @@
 package cl.learning.mall.domain;
 
 import lombok.Data;
+import org.springframework.data.mongodb.core.index.CompoundIndex;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,6 +16,7 @@ import java.util.Date;
  */
 @Data
 @Entity
+@CompoundIndex(name = "brand_price", def = "{'brand':1,'price':1}")
 public class Goods {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,6 +27,8 @@ public class Goods {
     private Integer count;
     private String origin;
     private String type;
+    private String title;
+    private String shop;
     private Date createAt;
     private Date updateAt;
 }

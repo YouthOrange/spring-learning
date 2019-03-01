@@ -18,6 +18,8 @@ import org.springframework.stereotype.Service;
 import javax.persistence.criteria.Predicate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 //import org.springframework.data.mongodb.core.MongoTemplate;
 
@@ -98,5 +100,16 @@ public class GoodsService {
 
     public Response<Goods> saveGoods(Goods goods) {
         return Response.ok(goodsRepository.save(goods));
+    }
+
+    public Response<Integer> saveGoods(List<Goods> goodsList) {
+        Integer count = goodsRepository.saveAll(goodsList).size();
+        return Response.ok(count);
+    }
+
+    public Response<Map<String, List<Goods>>> findAllGroupByBrand() {
+        List<Goods> goodsList = goodsRepository.findAll();
+        Map<String, List<Goods>> map = goodsList.stream().collect(Collectors.groupingBy(Goods::getBrand));
+        return Response.ok(map);
     }
 }

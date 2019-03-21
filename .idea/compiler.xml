@@ -10,7 +10,6 @@
         <module name="nacos-server" />
         <module name="service-apollo" />
         <module name="service-communicate" />
-        <module name="service-crawler" />
         <module name="service-es" />
         <module name="service-fegin" />
         <module name="service-hi" />
@@ -21,6 +20,9 @@
         <module name="spring-cloud-learning" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="service-crawler" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import java.net.URISyntaxException;
 import java.util.List;
 
 /**
@@ -19,7 +20,7 @@ public class PersonController {
     RestTemplate restTemplate;
 
     @PostMapping(value = "/save")
-    public Long savePerson(@RequestBody(required = false) PersonDto person) {
+    public Long savePerson(@RequestBody(required = false) PersonDto person) throws URISyntaxException {
         if (person == null) {
             return -1L;
         }
@@ -35,6 +36,7 @@ public class PersonController {
                         @RequestParam(required = false) Integer age,
                         @RequestParam(required = false) Integer minAge) {
         if (address != null) {
+
             return restTemplate.getForEntity("http://SERVICE-ES/person/findAll?address=" + address, List.class).getBody();
         }
         if (age != null) {

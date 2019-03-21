@@ -37,9 +37,9 @@ public class CrawLerTest {
     public void test1() {
         try {
             List<Goods> goodsList = new ArrayList<>();
-            int page = 10;
+            int page = 100;
             while (page > 0) {
-                goodsList.addAll(CrawLerUtil.searchFromJD("零食", page));
+                goodsList.addAll(CrawLerUtil.searchFromJD("民谣", page));
                 page--;
             }
             goodsList = goodsList.stream().filter(goods -> StringUtils.isNotEmpty(goods.getBrand())).collect(Collectors.toList());
@@ -56,7 +56,7 @@ public class CrawLerTest {
             List<Playlist> playlistList = new ArrayList<>();
             int page =1;
             while (page<39){
-                playlistList.addAll(CrawLerUtil.searchPlayListFrom163("全部",page));
+                playlistList.addAll(CrawLerUtil.searchPlayListFrom163("粤语",page));
                 page++;
             }
             System.out.println(JSON.toJSONString(playlistList));
